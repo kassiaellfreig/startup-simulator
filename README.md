@@ -201,9 +201,9 @@ startup-simulator/
 ├── core/
 │   ├── generator.py      # Gera tickets via IA (prompt engineering)
 │   └── data_factory.py   # Gera datasets sintéticos com anomalias
-├── tickets/              # Tickets gerados (.json) - NÃO versionado
-├── datasets/             # Datasets gerados (.csv/.json) - NÃO versionado
-├── portfolio/            # SUAS soluções - NÃO versionado (seu espaço!)
+├── tickets/              # Tickets gerados (.json) 
+├── datasets/             # Datasets gerados (.csv/.json) 
+├── portfolio/            # SUAS soluções 
 ├── venv/                 # Ambiente virtual - NÃO versionado
 ├── run.py                # Entry point do projeto
 ├── requirements.txt      # Dependências Python
