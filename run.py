@@ -72,7 +72,7 @@ def main():
     print(f"\n📝 Descrição:")
     print(f"   {ticket.get('descricao', 'N/A')}")
     
-    # ✅ NOVO: Mostrar tarefa do analista
+    # Mostrar tarefa do analista
     print(f"\n👤 Tarefa do Analista:")
     print(f"   {ticket.get('tarefa_analista', 'N/A')}")
     
