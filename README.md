@@ -53,3 +53,75 @@ pip install -r requirements.txt
 
 # 5. Rode o simulador
 python run.py
+```
+## 📁 Estrutura do Projeto
+
+```text
+startup-simulator/
+├── core/
+│   ├── generator.py      # Gera tickets via IA
+│   └── data_factory.py   # Gera datasets sintéticos
+├── tickets/              # Tickets gerados (não versionado)
+├── datasets/             # Datasets gerados (não versionado)
+├── portfolio/            # Suas soluções (não versionado)
+├── run.py                # Script principal
+└── README.md             # Esta documentação
+```
+
+## 🎯 Como Usar
+
+1. Execute `python run.py`
+2. Escolha o domínio da demanda:
+   - `1` - IA/Machine Learning
+   - `2` - Cibersegurança
+   - `3` - IA + Segurança (Intersecção)
+   - `4` - Aleatório (Mixed)
+3. Aguarde a geração do ticket (~1-2 minutos)
+4. Analise os arquivos gerados:
+   - `tickets/TKXXXX.json` - Descrição da demanda
+   - `datasets/TKXXXX_*.csv|json` - Dados para análise
+5. Desenvolva sua solução na pasta `portfolio/`
+6. Documente seu processo (Markdown, Jupyter, etc.)
+
+### Exemplo de Ticket Gerado
+
+```json
+{
+  "id": "TK5678",
+  "titulo": "Detecção de brute force em API de login",
+  "domain": "security",
+  "contexto_empresa": "Banco digital",
+  "descricao": "Pico de 500 requisições 401 em 2 minutos no endpoint /auth/login",
+  "urgencia": "alta",
+  "tarefa_analista": "Analise os logs e identifique os IPs responsáveis...",
+  "entregaveis_esperados": [
+    "Lista de IPs suspeitos (CSV)",
+    "Script de detecção (Python)",
+    "Relatório de incidente (Markdown)"
+  ],
+  "data_schema": "api_logs",
+  "anomalia_para_buscar": "Múltiplas requisições 401 do mesmo IP em janela de 5 minutos",
+  "criterio_sucesso": "Identificou ≥3 IPs com ≥10 tentativas falhas cada"
+}
+```
+## 📊 Exemplos de Casos de Uso
+
+| Cenário | Habilidade Praticada |
+|---------|---------------------|
+| Detecção de brute force em API | Análise de logs, Python, regras de rate limiting |
+| Viés de gênero em modelo de crédito | Pandas, estatística, fairness em ML |
+| Session hijacking em sistema web | Forense digital, correlação de timestamps |
+| Data drift em pipeline de ML | Monitoramento de modelos, alertas proativos |
+
+## 🤝 Contribuindo
+
+Este é um projeto de portfólio pessoal. Sugestões de melhoria são bem-vindas via Issues!
+
+## 📄 Licença
+
+Distribuído sob a licença MIT. Veja [LICENSE](LICENSE) para mais informações.
+
+## 👤 Autora
+
+**Kássia Guedes** - Analista de IA/Security em formação  
+🔗 [LinkedIn](https://www.linkedin.com/in/k%C3%A1ssia-e-f-098789129/) | 🐙 [GitHub](https://github.com/kassiaellfreig)
