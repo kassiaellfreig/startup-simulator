@@ -20,7 +20,7 @@ class DataFactory:
     
     def create_dataset(self, ticket):
         """
-        Cria dataset baseado no ticket - AGORA COM CONTEXTO
+        Cria dataset baseado no ticket 
         
         Args:
             ticket: dicionário com informações do ticket
