@@ -145,7 +145,7 @@ Seja específico. Não use placeholders."""
                 if texto_limpo.startswith(prefixo):
                     texto_limpo = texto_limpo[len(prefixo):].strip()
             
-            # CORREÇÃO CRÍTICA: Se começa com " mas não tem {, adiciona
+            # Se começa com " mas não tem {, adiciona
             if texto_limpo.startswith('"') and not texto_limpo.startswith('{'):
                 texto_limpo = "{" + texto_limpo
             
